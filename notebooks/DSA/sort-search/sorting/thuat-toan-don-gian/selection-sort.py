@@ -14,9 +14,8 @@ def selection_sort(arr):
 		arr[i], arr[min_idx] = arr[min_idx], arr[i]
 	return arr
 
-if __name__ == "__main__":
-    arr = [64, 25, 12, 22, 11, 23, 76, 1]
-    
-    print("Original array: ", arr)
-    
-    print("Sorted array: ", selection_sort(arr))
+arr = [64, 25, 12, 22, 11, 23, 76, 1]
+
+print("Original array: ", arr)
+
+print("Sorted array: ", selection_sort(arr))
