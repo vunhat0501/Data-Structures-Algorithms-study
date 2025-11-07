@@ -47,7 +47,7 @@ def mergeSort(arr, left, right):
     
     merge(arr, left, mid, right)
     
-if __name__ == '__main__':
-	arr = [12, 11, 13, 5, 6, 7]
-	mergeSort(arr, 0, len(arr) - 1)
-	print(arr)
+
+arr = input().split()
+mergeSort(arr, 0, len(arr) - 1)
+print(arr)

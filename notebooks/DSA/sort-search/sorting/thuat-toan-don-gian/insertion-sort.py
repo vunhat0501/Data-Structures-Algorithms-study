@@ -11,5 +11,5 @@ def insertionSort(arr):
 		
 	return arr
 
-arr = [12, 11, 13, 5, 6]
+arr = input().split()
 print("Array after sorting: ", insertionSort(arr))

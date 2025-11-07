@@ -26,7 +26,7 @@ def quick_sort(arr, low, high):
     quick_sort(arr, low, pi - 1)
     quick_sort(arr, pi + 1, high)
 
-if __name__ == '__main__':
-  arr = [10, 7, 8, 9, 1, 5, 11, 2, 3, 16, 20, 24, 51, 34, 65, 12, 70]
-  quick_sort(arr, 0, len(arr) - 1)
-  print(arr)
+
+arr = [int(x) for x in input().split()]
+quick_sort(arr, 0, len(arr) - 1)
+print(arr)
