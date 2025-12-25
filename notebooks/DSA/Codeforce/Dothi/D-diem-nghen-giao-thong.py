@@ -1,11 +1,17 @@
 import sys
 from collections import deque
-input = sys.stdin.readline
+
 
 def solve():
-    t = int(input())
+    data = sys.stdin.read().split()
+    it = iter(data)
+    
+    t = int(next(it))
     for _ in range(t):
-        n, m, x, y = list(map(int, input().split()))
+        n = int(next(it))
+        m = int(next(it))
+        x = int(next(it))
+        y = int(next(it))
         
         x -= 1
         y -= 1
@@ -13,7 +19,8 @@ def solve():
         adj = [[] for _ in range(n)]
         
         for _ in range(m):
-            u, v = list(map(int, input().split()))
+            u = int(next(it))
+            v = int(next(it))
             adj[u-1].append(v-1)
             
         def bfs(start, end, blocked_node):
