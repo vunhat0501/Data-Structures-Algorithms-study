@@ -1,3 +1,5 @@
+# ĐẾM SỐ THÀNH PHẦN LIÊN THÔNG BẰNG DFS
+
 import sys
 
 def solve():

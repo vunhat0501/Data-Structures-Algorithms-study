@@ -1,3 +1,5 @@
+# TÌM SỐ THÀNH PHẦN LIÊN THÔNG VỚI BFS
+
 import sys
 from collections import deque
 

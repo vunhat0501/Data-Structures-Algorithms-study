@@ -1,7 +1,9 @@
+# SỐ LƯỢNG HÒN ĐẢO
+
 import sys
 
-dx = [-1, -1, -1, 0, 1, 1, 1, 0]
-dy = [-1, 0, 1, 1, 1, 0, -1, -1]
+dx = [-1, -1, -1, 0, 0, 1, 1, 1]
+dy = [-1, 0, 1, -1, 1, -1, 0, 1]
 
 def solve():
     data = sys.stdin.read().split()
@@ -39,7 +41,6 @@ def solve():
                             ny = cy + dy[k]
                             
                             if 0 <= nx < n and 0 <= ny < m and matrix[nx][ny] == 1:
-                                stack.append((nx, ny))
                                 matrix[nx][ny] = 0
                                 stack.append((nx, ny))
         print(count)
